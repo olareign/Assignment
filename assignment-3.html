@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment three</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        main{
+            background-color: #f2f2;
+            min-width: 100vh;
+            min-height: 100vh;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+            background-color: #5868d1;
+            width: 50%;
+            height: 100%;
+            margin: auto;
+        }
+        form input{
+            display: block;
+            min-width: 50vw;
+            padding: 5px;
+            outline: none;
+        }
+        form input[type="submit"]{
+            cursor: pointer;
+            border: none;
+            box-shadow: 1px 2px #000;
+        }
+        form input[type="submit"]:hover{
+            box-shadow: 3px 4px #000;
+        }
+        form textarea{
+            display: block;
+            min-width: 50vw;     
+            padding: 5px;
+            outline: none;
+        }
+        form select{
+            display: block;
+            min-width: 50vw;     
+            padding: 5px;
+        }
+        label {
+            font-size: 1.2em;
+            color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1 style="text-align: center;">Form page</h1>
+        <form action="#">
+            <label for="name">
+                Name:
+                <input type="text" name="name" id="name" placeholder="name">
+            </label>
+            
+            <label for="Email">
+                Email:
+                <input type="text" name="email" id="email" placeholder="example@gmail.com">
+            </label>
+            
+            <label for="message">
+                Message:
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </label>
+            <label for="priority">
+                Priority:
+                <select name="priority" id="priority">
+                    <option value="UI/UX">UI/UX</option>
+                    <option value="GraphicDesign">Graphic Design</option>
+                    <option value="Frontend">Frontend</option>
+                    <option value="Backend">Backend</option>
+                    <option value="Fullstack">Fullstack</option>
+                    <option value="DevOps">DevOps</option>
+                </select>
+            </label>
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+</body>
+</html>
